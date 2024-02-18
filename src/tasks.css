@@ -1,0 +1,192 @@
+@import url("https://v1.fontapi.ir/css/VazirFD:100;300;500;700;900");
+/* reset */
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+/* root veriable */
+:root {
+  max-width: 100%;
+  --color-primaray: #219f95;
+  --color-secondary: #234894;
+  --color-headings: #1e1e1e;
+  --color-body: #696969;
+  --color-white: #fff;
+  --avatar-size: 40px;
+}
+html {
+  font-size: 62.5%;
+}
+body,
+button {
+  font-family: Vazir FD, sans-serif;
+}
+
+body {
+  color: var(--color-body);
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding: 1.5rem;
+}
+
+h1,
+h3 {
+  color: var(--color-headings);
+  font-weight: 900;
+}
+h2 {
+  color: var(--color-secondary);
+}
+h2 {
+  font-size: 1rem;
+}
+h1 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 1.2rem;
+  }
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 1.6rem;
+  }
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+}
+/* container */
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.panel {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6rem;
+}
+.panel h1 {
+  grid-column: 1/-1;
+}
+.panel h1 {
+  margin: 2rem;
+}
+
+.block--detailes {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.detailes-head h2 {
+  padding-right: 1.8rem;
+}
+.detailes-head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+/* icon */
+.icon {
+  background-color: #afcedd;
+  color: var(--color-secondary);
+  font-size: 1.8rem;
+  font-weight: 900;
+  width: 30px;
+  height: 30px;
+  border-radius: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* btn */
+.btn {
+  border: 0;
+  background-color: var(--color-primaray);
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  width: 8rem;
+  height: 3.6rem;
+  padding: 1rem 0.75rem;
+  border-radius: 8px;
+  text-align: center;
+}
+/* avatar */
+.avatar img {
+  width: var(--avatar-size);
+  height: 100%;
+  border-radius: 0.6rem;
+  margin-left: 1.2rem;
+}
+.avatar > p {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-headings);
+}
+.avatar {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5 rem;
+}
+@media screen and (min-width: 768px) {
+  .panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5.8rem;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+  }
+  .btn {
+    font-size: 1.2rem;
+    width: 12rem;
+    height: 4.5rem;
+    padding: 1.5rem 1rem;
+    border-radius: 8px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .panel {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 6.8rem;
+  }
+  .btn {
+    font-size: 1.5rem;
+    width: 15rem;
+    height: 6rem;
+    padding: 2rem 1.5rem;
+    border-radius: 8px;
+  }
+  .icon {
+    width: 50px;
+    height: 50px;
+    font-size: 2rem;
+  }
+}
